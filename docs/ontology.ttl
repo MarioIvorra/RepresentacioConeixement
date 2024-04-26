@@ -1,0 +1,495 @@
+@prefix : <http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#> .
+
+<http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology> rdf:type owl:Ontology ;
+                                                                                 rdfs:comment "Data collected from flight satisfaction surveys on Qatar Airways and Ryanair."@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasDestination
+:hasDestination rdf:type owl:ObjectProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Flight ;
+                rdfs:range :Destination .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasFlight
+:hasFlight rdf:type owl:ObjectProperty ;
+           rdfs:domain :Passenger ;
+           rdfs:range :Flight .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasOrigin
+:hasOrigin rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Flight ;
+           rdfs:range :Origin .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasRating
+:hasRating rdf:type owl:ObjectProperty ;
+           rdfs:domain :Review ;
+           rdfs:range :Rating .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasReview
+:hasReview rdf:type owl:ObjectProperty ;
+           rdfs:domain :Flight ;
+           rdfs:range :Review ;
+           rdfs:comment "Links a flight to a review about it" ;
+           rdfs:label "hasReview" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasAirline
+:hasAirline rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Flight ;
+            rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasClass
+:hasClass rdf:type owl:DatatypeProperty ;
+          rdfs:domain :SeatType ;
+          rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasDatePublished
+:hasDatePublished rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Review ;
+                  rdfs:range xsd:dateTime ;
+                  rdfs:comment "Represents the date when the review was published" ;
+                  rdfs:label "hasDatePublished" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasDestination
+:hasDestination rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasFlightNumber
+:hasFlightNumber rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Flight ;
+                 rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasOrigin
+:hasOrigin rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasOverallRating
+:hasOverallRating rdf:type owl:DatatypeProperty ,
+                           owl:FunctionalProperty ;
+                  rdfs:domain :Review ;
+                  rdfs:range xsd:decimal ;
+                  rdfs:comment "Represents the overall rating given in a review" ;
+                  rdfs:label "hasOverallRating" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasPrice
+:hasPrice rdf:type owl:DatatypeProperty ;
+          rdfs:domain :SeatType ;
+          rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasRating
+:hasRating rdf:type owl:DatatypeProperty ;
+           rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasReviewText
+:hasReviewText rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Review ;
+               rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#isTripVerified
+:isTripVerified rdf:type owl:DatatypeProperty ,
+                         owl:FunctionalProperty ;
+                rdfs:domain :Passenger ;
+                rdfs:range xsd:boolean ;
+                rdfs:comment "Indicates whether the passenger’s trip was verified" ;
+                rdfs:label "isTripVerified" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Aircraft
+:Aircraft rdf:type owl:Class ;
+          rdfs:subClassOf :Flight ;
+          rdfs:comment "A class representing a specific aircraft" ;
+          rdfs:label "Aircraft" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#CabinStaffService
+:CabinStaffService rdf:type owl:Class ;
+                   rdfs:subClassOf :Rating ;
+                   rdfs:comment "A class representing a specific cabin staff service" ;
+                   rdfs:label "CabinStaffService" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Comment
+:Comment rdf:type owl:Class ;
+         rdfs:subClassOf :Review ;
+         rdfs:comment "A class representing a specific comment" ;
+         rdfs:label "Comment" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#CommentTitle
+:CommentTitle rdf:type owl:Class ;
+              rdfs:subClassOf :Review ;
+              rdfs:comment "A class representing a specific comment title" ;
+              rdfs:label "CommentTitle" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#DateFlown
+:DateFlown rdf:type owl:Class ;
+           rdfs:subClassOf :Flight ;
+           rdfs:comment "A class representing a specific date flown" ;
+           rdfs:label "DateFlown" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#DatePublished
+:DatePublished rdf:type owl:Class ;
+               rdfs:subClassOf :Review ;
+               rdfs:comment "A class representing a specific date published" ;
+               rdfs:label "DatePublished" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Destination
+:Destination rdf:type owl:Class ;
+             rdfs:subClassOf :Flight ;
+             rdfs:comment "A class representing a specific destination" ;
+             rdfs:label "Destination" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Flight
+:Flight rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasDestination ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Destination
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasOrigin ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :Origin
+                        ] ;
+        rdfs:comment "A class representing a specific flight" ;
+        rdfs:label "Flight" ;
+        rdfs:sameAs "https://dbpedia.org/page/Category:Flight"@en .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#FlightRoute
+:FlightRoute rdf:type owl:Class ;
+             rdfs:subClassOf :Flight ;
+             rdfs:comment "A class representing a specific Flight route" ;
+             rdfs:label "FlightRoute" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#FoodAndBeverages
+:FoodAndBeverages rdf:type owl:Class ;
+                  rdfs:subClassOf :Rating ;
+                  rdfs:comment "A class representing a specific food and beverages" ;
+                  rdfs:label "FoodAndBeverages" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#GroundService
+:GroundService rdf:type owl:Class ;
+               rdfs:subClassOf :Rating ;
+               rdfs:comment "A class representing a specific ground service" ;
+               rdfs:label "GroundService" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#InflightEntertainment
+:InflightEntertainment rdf:type owl:Class ;
+                       rdfs:subClassOf :Rating ;
+                       rdfs:comment "A class representing a specific in flight entertaiment" ;
+                       rdfs:label "InflightEntertainment" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Origin
+:Origin rdf:type owl:Class ;
+        rdfs:subClassOf :Flight ;
+        rdfs:comment "A class representing a specific origin" ;
+        rdfs:label "Origin" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#OverallRating
+:OverallRating rdf:type owl:Class ;
+               rdfs:subClassOf :Rating ;
+               rdfs:comment "A class representing a specific overall rating" ;
+               rdfs:label "OverallRating" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Passenger
+:Passenger rdf:type owl:Class ;
+           rdfs:comment "A class representing a specific passenger" ;
+           rdfs:label "Passenger" ;
+           rdfs:sameAs "https://dbpedia.org/page/Passenger"@en .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#PassengerCountry
+:PassengerCountry rdf:type owl:Class ;
+                  rdfs:subClassOf :Passenger ;
+                  rdfs:comment "A class representing a specific passenger country" ;
+                  rdfs:label "PassengerCountry" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:comment "A class representing a specific rating" ;
+        rdfs:label "Rating" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Recommended
+:Recommended rdf:type owl:Class ;
+             rdfs:subClassOf :Review ;
+             rdfs:comment "A class representing a specific recommended" ;
+             rdfs:label "Recommended" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Review
+:Review rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasDatePublished ;
+                          owl:someValuesFrom xsd:dateTime
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasOverallRating ;
+                          owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:int
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasOverallRating ;
+                          owl:maxQualifiedCardinality "10"^^xsd:nonNegativeInteger ;
+                          owl:onDataRange xsd:int
+                        ] ;
+        rdfs:comment "A class representing a specific review" ;
+        rdfs:label "Review" ;
+        rdfs:sameAs "https://dbpedia.org/page/Review"@en .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#SeatComfort
+:SeatComfort rdf:type owl:Class ;
+             rdfs:subClassOf :Rating ;
+             rdfs:comment "A class representing a specific seat comfort" ;
+             rdfs:label "SeatComfort" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#SeatType
+:SeatType rdf:type owl:Class ;
+          rdfs:comment "A class representing a specific Seat type" ;
+          rdfs:label "SeatType" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#TravellerType
+:TravellerType rdf:type owl:Class ;
+               rdfs:comment "A class representing a specific traveller type" ;
+               rdfs:label "TravellerType" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#TripVerified
+:TripVerified rdf:type owl:Class ;
+              rdfs:subClassOf :Passenger ;
+              rdfs:comment "A class representing a specific trip verified" ;
+              rdfs:label "TripVerified" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#ValueForMoney
+:ValueForMoney rdf:type owl:Class ;
+               rdfs:subClassOf :Rating ;
+               rdfs:comment "A class representing a specific value for money" ;
+               rdfs:label "ValueForMoney" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#WifiAndConnectivity
+:WifiAndConnectivity rdf:type owl:Class ;
+                     rdfs:subClassOf :Rating ;
+                     rdfs:comment "A class representing a specific wifi and connectivity" ;
+                     rdfs:label "WifiAndConnectivity" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#BussinesClassSeat
+:BussinesClassSeat rdf:type owl:NamedIndividual ,
+                            :SeatType .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#DomesticFlightRoute
+:DomesticFlightRoute rdf:type owl:NamedIndividual ,
+                              :FlightRoute .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#EconomyClassSeat
+:EconomyClassSeat rdf:type owl:NamedIndividual ,
+                           :SeatType .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#InternationalFlightRoute
+:InternationalFlightRoute rdf:type owl:NamedIndividual ,
+                                   :FlightRoute .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#QatarAirwaysFlight
+:QatarAirwaysFlight rdf:type owl:NamedIndividual ,
+                             :Flight .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#QatarAirwaysReview
+:QatarAirwaysReview rdf:type owl:NamedIndividual ,
+                             :Review ;
+                    :hasRating ""^^xsd:int ;
+                    :hasReviewText "" .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#RyanairFlight
+:RyanairFlight rdf:type owl:NamedIndividual ,
+                        :Flight .
+
+
+###  http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#RyanairReview
+:RyanairReview rdf:type owl:NamedIndividual ,
+                        :Review ;
+               :hasRating ""^^xsd:int ;
+               :hasReviewText "" .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:hasDestination rdfs:comment "Represents the destination of a flight" ;
+                rdfs:label "hasDestination" .
+
+
+:hasOrigin rdfs:comment "Represents the origin of a flight" ;
+           rdfs:label "hasOrigin" .
+
+
+:hasRating rdfs:comment "Links a review to its rating" ;
+           rdfs:label "hasRating" .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/f> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "If a flight has a review with a seat comfort rating of less than 3, then the flight has uncomfortable seats." ;
+   rdfs:label "UncomfortableSeats" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasReview ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/f> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThan> ;
+                                                                  <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                               rdf:first <http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/s> ;
+                                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                                          rdf:first 3 ;
+                                                                                                                          rdf:rest rdf:nil
+                                                                                                                        ]
+                                                                                                             ]
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> rdf:nil
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "passatger has verified his trip and has given an overall rating of 10 to a review, now the passatger is satisfied" ;
+   rdfs:label "SatisfiedPassenger" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasReview ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/p> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :isTripVerified ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> "true"^^xsd:boolean
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasOverallRating ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/r> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> 10
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> rdf:nil
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "This rule states that if a flight has a review with an overall rating of 10, then the flight is recommended" ;
+   rdfs:label "Rule_HighRatingImpliesRecommendation" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasReview ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/f> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/r>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasOverallRating ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology/r> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> 10
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> rdf:nil
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

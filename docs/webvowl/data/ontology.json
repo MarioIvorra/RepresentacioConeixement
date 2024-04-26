@@ -1,0 +1,988 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology" ],
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "comments" : {
+      "en" : "Data collected from flight satisfaction surveys on Qatar Airways and Ryanair."
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "32",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#ValueForMoney",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ValueForMoney",
+      "undefined" : "ValueForMoney"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific value for money"
+    },
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#DateFlown",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DateFlown",
+      "undefined" : "DateFlown"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific date flown"
+    },
+    "id" : "8",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#InflightEntertainment",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "InflightEntertainment",
+      "undefined" : "InflightEntertainment"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific in flight entertaiment"
+    },
+    "id" : "11",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#SeatType",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatType",
+      "undefined" : "SeatType"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#EconomyClassSeat",
+      "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+      "labels" : {
+        "IRI-based" : "EconomyClassSeat"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#BussinesClassSeat",
+      "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+      "labels" : {
+        "IRI-based" : "BussinesClassSeat"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A class representing a specific Seat type"
+    },
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#CabinStaffService",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CabinStaffService",
+      "undefined" : "CabinStaffService"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific cabin staff service"
+    },
+    "id" : "14",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Recommended",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Recommended",
+      "undefined" : "Recommended"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific recommended"
+    },
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Destination",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Destination",
+      "undefined" : "Destination"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific destination"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Review",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "en",
+        "value" : "https://dbpedia.org/page/Review",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Review",
+      "undefined" : "Review"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#RyanairReview",
+      "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+      "labels" : {
+        "IRI-based" : "RyanairReview"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#QatarAirwaysReview",
+      "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+      "labels" : {
+        "IRI-based" : "QatarAirwaysReview"
+      }
+    } ],
+    "subClasses" : [ "15", "31", "32", "33" ],
+    "comment" : {
+      "undefined" : "A class representing a specific review"
+    },
+    "id" : "16"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#FoodAndBeverages",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FoodAndBeverages",
+      "undefined" : "FoodAndBeverages"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific food and beverages"
+    },
+    "id" : "34",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#TripVerified",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TripVerified",
+      "undefined" : "TripVerified"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific trip verified"
+    },
+    "id" : "35",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Rating",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rating",
+      "undefined" : "Rating"
+    },
+    "subClasses" : [ "34", "37", "24", "11", "30", "28", "6", "14" ],
+    "comment" : {
+      "undefined" : "A class representing a specific rating"
+    },
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#DatePublished",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DatePublished",
+      "undefined" : "DatePublished"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific date published"
+    },
+    "id" : "31",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "39",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "52",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#OverallRating",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OverallRating",
+      "undefined" : "OverallRating"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific overall rating"
+    },
+    "id" : "37",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "54",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Flight",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "en",
+        "value" : "https://dbpedia.org/page/Category:Flight",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Flight",
+      "undefined" : "Flight"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#QatarAirwaysFlight",
+      "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+      "labels" : {
+        "IRI-based" : "QatarAirwaysFlight"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#RyanairFlight",
+      "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+      "labels" : {
+        "IRI-based" : "RyanairFlight"
+      }
+    } ],
+    "subClasses" : [ "21", "19", "8", "10", "1" ],
+    "comment" : {
+      "undefined" : "A class representing a specific flight"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#WifiAndConnectivity",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WifiAndConnectivity",
+      "undefined" : "WifiAndConnectivity"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific wifi and connectivity"
+    },
+    "id" : "28",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#SeatComfort",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SeatComfort",
+      "undefined" : "SeatComfort"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific seat comfort"
+    },
+    "id" : "30",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "60",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Passenger",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "annotations" : {
+      "sameAs" : [ {
+        "identifier" : "sameAs",
+        "language" : "en",
+        "value" : "https://dbpedia.org/page/Passenger",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Passenger",
+      "undefined" : "Passenger"
+    },
+    "subClasses" : [ "35", "62" ],
+    "comment" : {
+      "undefined" : "A class representing a specific passenger"
+    },
+    "id" : "36"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Comment",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Comment",
+      "undefined" : "Comment"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific comment"
+    },
+    "id" : "32",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#GroundService",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "GroundService",
+      "undefined" : "GroundService"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific ground service"
+    },
+    "id" : "24",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Origin",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Origin",
+      "undefined" : "Origin"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific origin"
+    },
+    "id" : "10",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#CommentTitle",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CommentTitle",
+      "undefined" : "CommentTitle"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific comment title"
+    },
+    "id" : "33",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#PassengerCountry",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PassengerCountry",
+      "undefined" : "PassengerCountry"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific passenger country"
+    },
+    "id" : "62",
+    "superClasses" : [ "36" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#TravellerType",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TravellerType",
+      "undefined" : "TravellerType"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific traveller type"
+    },
+    "id" : "68"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#FlightRoute",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FlightRoute",
+      "undefined" : "FlightRoute"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#InternationalFlightRoute",
+      "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+      "labels" : {
+        "IRI-based" : "InternationalFlightRoute"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#DomesticFlightRoute",
+      "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+      "labels" : {
+        "IRI-based" : "DomesticFlightRoute"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A class representing a specific Flight route"
+    },
+    "id" : "21",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#Aircraft",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aircraft",
+      "undefined" : "Aircraft"
+    },
+    "comment" : {
+      "undefined" : "A class representing a specific aircraft"
+    },
+    "id" : "19",
+    "superClasses" : [ "2" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "59",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "70",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasClass",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "hasClass"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "3"
+  }, {
+    "range" : "2",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "2",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "7",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "13"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "17"
+  }, {
+    "range" : "2",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "18"
+  }, {
+    "range" : "2",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "20"
+  }, {
+    "range" : "7",
+    "domain" : "11",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "range" : "7",
+    "domain" : "24",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasPrice",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasPrice"
+    },
+    "domain" : "4",
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  }, {
+    "range" : "7",
+    "domain" : "28",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "27"
+  }, {
+    "range" : "7",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasOrigin",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasOrigin",
+      "undefined" : "hasOrigin"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Represents the origin of a flight"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasAirline",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasAirline"
+    },
+    "domain" : "2",
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasFlight",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "hasFlight"
+    },
+    "domain" : "36",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "range" : "7",
+    "domain" : "34",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "44"
+  }, {
+    "range" : "16",
+    "domain" : "33",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "45"
+  }, {
+    "range" : "7",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "46"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "47"
+  }, {
+    "range" : "16",
+    "domain" : "32",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "48"
+  }, {
+    "range" : "16",
+    "domain" : "31",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "49"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasDestination",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "54",
+    "label" : {
+      "IRI-based" : "hasDestination",
+      "undefined" : "hasDestination"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Represents the destination of a flight"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasReview",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "hasReview",
+      "undefined" : "hasReview"
+    },
+    "domain" : "2",
+    "comment" : {
+      "undefined" : "Links a flight to a review about it"
+    },
+    "attributes" : [ "object" ],
+    "id" : "58"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasDatePublished",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "60",
+    "label" : {
+      "IRI-based" : "hasDatePublished",
+      "undefined" : "hasDatePublished"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Represents the date when the review was published"
+    },
+    "attributes" : [ "functional", "datatype", "someValues" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#isTripVerified",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "isTripVerified",
+      "undefined" : "isTripVerified"
+    },
+    "domain" : "36",
+    "comment" : {
+      "undefined" : "Indicates whether the passenger’s trip was verified"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasOverallRating",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "hasOverallRating",
+      "undefined" : "hasOverallRating"
+    },
+    "maxCardinality" : "10",
+    "minCardinality" : "1",
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Represents the overall rating given in a review"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasRating",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "hasRating",
+      "undefined" : "hasRating"
+    },
+    "domain" : "39",
+    "comment" : {
+      "undefined" : "Links a review to its rating"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasDatePublished",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "hasDatePublished",
+      "undefined" : "hasDatePublished"
+    },
+    "domain" : "16",
+    "comment" : {
+      "undefined" : "Represents the date when the review was published"
+    },
+    "attributes" : [ "functional", "datatype" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasFlightNumber",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "hasFlightNumber"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology#hasReviewText",
+    "baseIri" : "http://www.semanticweb.org/ivorr/ontologies/2024/3/FlightSatisfactionOntology",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "hasReviewText"
+    },
+    "domain" : "16",
+    "attributes" : [ "datatype" ],
+    "id" : "67"
+  }, {
+    "range" : "36",
+    "domain" : "62",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "69"
+  }, {
+    "range" : "36",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  } ]
+}
